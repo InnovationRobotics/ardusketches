@@ -42,13 +42,13 @@ void setup()
   pinMode(13, OUTPUT);
   nh.initNode();
   nh.advertise(p);
-  //  Serial.begin(115200);
+//  Serial.begin(115200);
 // position
   
  if (!bno.begin())
   {
-//    Serial.print("No BNO055 detected");
-    while (1);
+//  Serial.print("No BNO055 detected");
+   while (1);
   }
   delay(1000);
 }
